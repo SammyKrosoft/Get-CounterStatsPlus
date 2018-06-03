@@ -35,5 +35,6 @@ For examples only.
 This is simple, after having installed PowerBI, just double-click on the Get-CounterStatsPlus-PBI.pbit file provided, put in the full path to the .CSV file that you collected with the above described PowerShell script, and see the magic !
 
 [test image size](/Screenshots/"PBI - Choose CSV to analyze.png"){:height="50%" width="50%"}
+
 ![test](https://github.com/favicon.ico){:height="24px" width="48px"}
 
