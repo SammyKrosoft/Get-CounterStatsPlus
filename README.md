@@ -34,7 +34,7 @@ For examples only.
 ### Visualizing your collected counters with the provided PowerBI Template
 This is simple, after having installed PowerBI, just double-click on the Get-CounterStatsPlus-PBI.pbit file provided, put in the full path to the .CSV file that you collected with the above described PowerShell script, and see the magic !
 
-![test image size](./Screenshots/PBI-ChooseCSVtoanalyze.png "height=10px")
+![test image size|883x282,20%](./Screenshots/PBI-ChooseCSVtoanalyze.png "height=10px")
 
 ![test](https://github.com/favicon.ico:height="24px" width="48px")
 
