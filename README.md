@@ -36,5 +36,5 @@ This is simple, after having installed PowerBI, just double-click on the Get-Cou
 
 [test image size](/Screenshots/"PBI - Choose CSV to analyze.png"){:height="50%" width="50%"}
 
-![test](https://github.com/favicon.ico){:height="24px" width="48px"}
+![test](https://github.com/favicon.ico:height="24px" width="48px")
 
