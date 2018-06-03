@@ -38,5 +38,5 @@ This is simple, after having installed PowerBI, just double-click on the Get-Cou
 
 ![test](https://github.com/favicon.ico:height="24px" width="48px")
 
-![very good|512x397,200%](https://github.com/favicon.ico)
+![very good|200%](https://github.com/favicon.ico)
 
