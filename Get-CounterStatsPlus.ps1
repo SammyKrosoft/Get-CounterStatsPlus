@@ -1,3 +1,35 @@
+<#PSScriptInfo
+
+.VERSION 1.9
+
+.GUID e59858e9-517c-4468-ba9e-9826f8944790
+
+.AUTHOR Sam Drey Microsoft Engineer
+
+.COMPANYNAME
+
+.COPYRIGHT
+
+.TAGS
+
+.LICENSEURI
+
+.PROJECTURI
+
+.ICONURI
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS
+
+.EXTERNALSCRIPTDEPENDENCIES
+
+.RELEASENOTES
+
+
+.PRIVATEDATA
+
+#>
 <#
 .SYNOPSIS
 Script: Get-CounterStatsPlus
@@ -15,6 +47,7 @@ which will be used to analayze the performance of target servers.
 This script will collect the specific counters value from the multiple target machines/servers 
 which will be used to analayze the performance of target servers.
 
+.NOTES
 The script will query a defined set of counters that you define there :
 
 $MyCounters = @"
