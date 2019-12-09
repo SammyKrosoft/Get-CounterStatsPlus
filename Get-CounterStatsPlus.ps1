@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 1.9
+.VERSION 1.9.1
 
 .GUID e59858e9-517c-4468-ba9e-9826f8944790
 
@@ -158,8 +158,9 @@ $DebugPreference = "Continue"
 # Set Error Action to your needs
 $ErrorActionPreference = "SilentlyContinue"
 #Script Version
-$ScriptVersion = "1.9"
+$ScriptVersion = "1.9.1"
 <# Version changes
+v1.9.1 : changed Expression += added comma on next append string instead of previous end string (lines 342-344)
 v1.6 : Tested with PowerBI template - packaging the whole as "GetAndAnalyzePerfMonCountersv1.6.zip"
 v1.5 : many things changed... added -IncludeFullCounterPath parameter, also if no
 Servers.txt files specified, will prompt to measure performance on local machine
@@ -338,9 +339,9 @@ Write-Host "Gathering performance counters for $($Servers -Join ", ")"
 Write-Host "That's a total of $($Servers.count) servers"
 
 #Collecting counter information for target servers
-$Expression = "Get-CounterStats -ComputerName `$Servers -Counter `$MyCounters | Select-Object ComputerName,DateTime,"
-If ($IncludeFullCounterPath) {$expression += "WholeCounter,"}
-$Expression += "CounterCategory,CounterName,Instance,Value | Export-Csv -Path `$OutputFile -Append -NoTypeInformation"
+$Expression = "Get-CounterStats -ComputerName `$Servers -Counter `$MyCounters | Select-Object ComputerName,DateTime"
+If ($IncludeFullCounterPath) {$expression += ",WholeCounter"}
+$Expression += ",CounterCategory,CounterName,Instance,Value | Export-Csv -Path `$OutputFile -Append -NoTypeInformation"
 #$Expression += "CounterCategory,CounterName,Instance,Value"
 
 For ($ReRun = 1;$ReRun -le $NumberOfSamples;$ReRun ++){
